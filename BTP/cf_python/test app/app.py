@@ -1,7 +1,7 @@
-from flask import Flask
+import flask
 import os
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
 cf_port = os.getenv("PORT")
 
@@ -10,6 +10,11 @@ cf_port = os.getenv("PORT")
 @app.route('/')
 def hello():
     return "Hello World"
+
+
+@app.route('/json')
+def return_json():
+    return flask.jsonify(cf_port)
 
 
 if __name__ == '__main__':
