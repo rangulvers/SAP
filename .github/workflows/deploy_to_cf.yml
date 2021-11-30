@@ -1,7 +1,12 @@
 name: Deploy to Cloud Foundry
 on:
   push:
-    branches: [ main ]
+    paths:
+    - 'BTP/cf_python/**'
+    
+defaults:
+  run:
+    working-directory: "BTP/cf_python/test app"
 jobs:
   deploy:
     runs-on: ubuntu-latest
