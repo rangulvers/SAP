@@ -7,6 +7,9 @@ There a are a couple of things that we need to solve to get this setup.
 
 ## Configure your deployment parameters with Github secrets
 
+![image](https://user-images.githubusercontent.com/5235430/144423398-ae1eed78-9083-4f30-8d89-8b4510fd81ad.png)
+
+
 ## Setup Github Actions
 
 If you have your CF app in the root repository create a new workflow and edit the file as needed. This will trigger the deployment.
