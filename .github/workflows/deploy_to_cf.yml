@@ -13,7 +13,7 @@ jobs:
       - name : CF PUSH
         uses: rangulvers/cf-push@v1
         with:
-          workdir:  '/home/runner/work/SAP/SAP/BTP/cf_python/test app/'
+          appdir:  '/home/runner/work/SAP/SAP/BTP/cf_python/test app/'
           api:      ${{ secrets.CF_API }}
           org:      ${{ secrets.CF_ORG }}
           space:    ${{ secrets.CF_SPACE }}
