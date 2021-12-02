@@ -1,5 +1,16 @@
 # Deploying CF applications to SAP BTP
 
+## Setup your SAP BTP Account
+
+---> Trial Link
+
+After you have created your Trial account you can find all information that you need right the the SAP BTP Cockpit
+
+![image](https://user-images.githubusercontent.com/5235430/144426864-c8ebac05-de47-473e-88ff-6f5da8bdae02.png)
+
+![image](https://user-images.githubusercontent.com/5235430/144426915-f245f16c-5239-481d-afa1-47ce1f669847.png)
+
+
 Deploying cf applications to SAP BTP is actually pretty easy. Thanks to the great work done by the SAP BTP the workflow is straight word. Check out the detailed blog post #todo (add blogpost link).
 But if you want to run quick prototypes uploading the app as a zip file is note the best choice. Of course you can make use of the CF CLI and just push your app directly to SAP BTP to test you latest code or you can take it one step further and make use of Github Actions to automatically trigger the deployment as soon as you have committed your code
 
