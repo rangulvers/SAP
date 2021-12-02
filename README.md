@@ -10,10 +10,6 @@ This repository is a collection of SAP coding examples and a work in progress. F
   - [SAP BTP Examples](#sap-btp-examples)
   - [SAP Cloud ALM](#sap-cloud-alm)
 
-## Setup CF and upload appplication
-
-In order to upload applications to SAP BTP you need to enable the CF Environment in your account,
-
 ## [SAP BTP Examples](BTP)
 
 [![Deploy NodeJS to Cloud Foundry](https://github.com/rangulvers/SAP/actions/workflows/deploy_js_to_cf.yml/badge.svg)](https://github.com/rangulvers/SAP/actions/workflows/deploy_js_to_cf.yml)
