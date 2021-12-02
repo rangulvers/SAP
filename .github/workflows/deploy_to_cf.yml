@@ -12,12 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: jhunt/cf-push@v1
+      - uses: rangulvers/cf-push@v1
         with:
           api:      ${{ secrets.CF_API }}
           org:      ${{ secrets.CF_ORG }}
           space:    ${{ secrets.CF_SPACE }}
           username: ${{ secrets.CF_USERNAME }}
           password: ${{ secrets.CF_PASSWORD }}
+#           workingdir: /home/runner/work/cf_python_test_app/cf_python_test_app
           manifest: manifest.yml
-          validate: false
+          validate: true
