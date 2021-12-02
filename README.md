@@ -1,4 +1,4 @@
-# SAP
+# SAP Coding Examples
 
 This repository is a collection of SAP coding examples and a work in progress. Feel free to helo extend the collection
 
