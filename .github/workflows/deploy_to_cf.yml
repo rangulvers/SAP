@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name : CF PUSH
-        uses: rangulvers/cf-push@v2
+        uses: rangulvers/cf-push@latest
         with:
           appdir:  '/home/runner/work/SAP/SAP/BTP/cf_python/test app/'
           api:      ${{ secrets.CF_API }}
