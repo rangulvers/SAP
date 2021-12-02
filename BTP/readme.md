@@ -6,7 +6,7 @@ Create a [SAP BTP Trial Account](https://www.sap.com/products/business-technolog
 
 After you have created your Trial account you can find all information that you need right the the SAP BTP Cockpit
 
-![image](https://user-images.githubusercontent.com/5235430/144426864-c8ebac05-de47-473e-88ff-6f5da8bdae02.png)
+![image](https://user-images.githubusercontent.com/5235430/144427955-4675339c-73d6-447e-b42b-38e8dd3fcde2.png)
 
 ![image](https://user-images.githubusercontent.com/5235430/144426915-f245f16c-5239-481d-afa1-47ce1f669847.png)
 
