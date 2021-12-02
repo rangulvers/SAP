@@ -9,7 +9,7 @@ cf_port = os.getenv("PORT")
 # Only get method by default
 @app.route('/')
 def hello():
-    return "Hello World!!!!!"
+    return "Hello Wor!ld!!!!!"
 
 # return JSON
 @app.route('/json')
