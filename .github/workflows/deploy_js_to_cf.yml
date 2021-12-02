@@ -1,20 +1,19 @@
-name: Deploy Python to Cloud Foundry
+name: Deploy NodeJS to Cloud Foundry
 on:
   push:
     paths:
-    - 'BTP/cf_python/**'
+    - 'BTP/cf_nodejs/**'
     
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v2
-      - name : CF PUSH
+      - name : Setup CF PUSH 
         uses: rangulvers/cf-push@main
         with:
-#           appdir:  '/home/runner/work/SAP/SAP/BTP/cf_python/testapp/'
-          appdir:   './BTP/cf_python/testapp'
+          appdir:   './BTP/cf_nodejs/testapp'
           api:      ${{ secrets.CF_API }}
           org:      ${{ secrets.CF_ORG }}
           space:    ${{ secrets.CF_SPACE }}
