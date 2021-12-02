@@ -19,6 +19,6 @@ jobs:
           space:    ${{ secrets.CF_SPACE }}
           username: ${{ secrets.CF_USERNAME }}
           password: ${{ secrets.CF_PASSWORD }}
-#           workingdir: /home/runner/work/cf_python_test_app/cf_python_test_app
+          workingdir: /home/runner/work/SAP/SAP(BTP/cf_python/test app/  #/home/runner/work/SAP/SAP
           manifest: manifest.yml
           validate: true
