@@ -8,9 +8,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout from Repository 
         uses: actions/checkout@v2
-      - name : CF PUSH
+      - name : CF PUSH Application
         uses: rangulvers/cf-push@main
         with:
           appdir:   './BTP/cf_python/testapp'
@@ -22,3 +22,5 @@ jobs:
           # debug : true                    # optional to see all dirs in deploy process
           manifest: manifest.yml
           validate: true
+
+
