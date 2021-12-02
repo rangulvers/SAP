@@ -9,7 +9,8 @@ cf_port = os.getenv("PORT")
 # Only get method by default
 @app.route('/')
 def hello():
-    return "Hello Wor!ld!!1!!1!111!1"
+    return "Hello World. I am deployed on SAP BTP with Github Actions"
+
 # return JSON
 @app.route('/json')
 def return_json():
@@ -20,4 +21,4 @@ if __name__ == '__main__':
     if cf_port is None:
         app.run(host='0.0.0.0', port=5000, debug=False)
     else:
-        app.run(host='0.0.0.0', port=int(cf_port), debug=True)
+        app.run(host='0.0.0.0', port=int(cf_port), debug=False)
