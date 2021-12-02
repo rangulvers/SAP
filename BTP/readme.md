@@ -2,7 +2,7 @@
 
 ## Setup your SAP BTP Account
 
----> Trial Link
+Create a [SAP BTP Trial Account](https://www.sap.com/products/business-technology-platform/trial.html)
 
 After you have created your Trial account you can find all information that you need right the the SAP BTP Cockpit
 
