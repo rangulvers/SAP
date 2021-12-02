@@ -4,7 +4,14 @@
 
 Create a [SAP BTP Trial Account](https://www.sap.com/products/business-technology-platform/trial.html)
 
-After you have created your Trial account you can find all information that you need right the the SAP BTP Cockpit
+After you have created your Trial account you can find all information that you need right the the SAP BTP Cockpit. 
+The parameters you will need are 
+
+* OrgID
+* Space
+* Username
+* Password
+* API
 
 ![image](https://user-images.githubusercontent.com/5235430/144427955-4675339c-73d6-447e-b42b-38e8dd3fcde2.png)
 
