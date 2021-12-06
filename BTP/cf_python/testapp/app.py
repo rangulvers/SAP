@@ -9,7 +9,7 @@ cf_port = os.getenv("PORT")
 # Only get method by default
 @app.route('/')
 def hello():
-    return "Hello World. I am deployed on SAP BTP with Github Actions"
+    return "Hallo wir lernen SAP BTP Zeugs"
 
 # return JSON
 @app.route('/json')
