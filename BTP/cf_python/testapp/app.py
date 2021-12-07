@@ -6,15 +6,13 @@ app = flask.Flask(__name__)
 cf_port = os.getenv("PORT")
 
 
-# Only get method by default
 @app.route('/')
-def hello():
-    return "Hallo wir lernen SAP BTP Zeugs"
-
-# return JSON
-@app.route('/json')
-def return_json():
-    return flask.jsonify(cf_port)
+def home():
+    """Landing Page"""
+    return flask.render_template(
+        'home.html',
+        page_title='Test Page'
+    )
 
 
 if __name__ == '__main__':
