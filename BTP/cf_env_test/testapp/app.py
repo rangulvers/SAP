@@ -15,7 +15,7 @@ def home():
     return flask.render_template(
         'home.html',
         app_port=cf_port,
-        page_title='Test Page',
+        page_title='Test Page ENV Test',
         api_url=api_service
     )
 
