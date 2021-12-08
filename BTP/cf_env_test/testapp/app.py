@@ -3,10 +3,12 @@ import os
 import cfenv
 
 app = flask.Flask(__name__)
-
 cf_port = os.getenv("PORT")
-env = cfenv.AppEnv()
-api_service = env.get_service(label="destination")
+
+testvar = os.getenv("TESTVAR")
+# env = cfenv.AppEnv()
+# api_service = env.get_service(label="destination")
+# api_service.credentials
 
 
 @app.route('/')
@@ -16,7 +18,7 @@ def home():
         'home.html',
         app_port=cf_port,
         page_title='Test Page ENV Test',
-        api_url=api_service
+        api_url=testvar
     )
 
 
