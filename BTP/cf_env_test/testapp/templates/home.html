@@ -6,7 +6,9 @@
  <div class="row">
      <h1 class="display-1">Hello World. CF Python Test App</h1>
  </div>
- {{api_url}}
+ {% for a in api_url%}
+ {{a}}
+ {% endfor %}
 <div class="row">
     <div class="col-xs-2">
         <div class="card">
