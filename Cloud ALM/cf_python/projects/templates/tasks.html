@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="container">
+ <div class="row">
+     <h1 class="display-1">Project Tasks <small>{{projectid}}</small></h1>
+ </div>
+<div class="row">
+
+    <table class="table">
+        <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>projectId</th>
+                        <th>title</th>
+                        <th>type</th>
+                        <th>status</th>
+                        <th>subStatus</th>
+                        <th>externalId</th>
+                        <th>dueDate</th>
+                        <th>priorityId</th>
+                        <th>assigneeId</th>
+                        <th>assigneeName</th>
+                        <th>approvalState</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        {% for t in tasks %}
+        <tr>
+            <td scope="row">{{t.id}}</td>
+            <td>{{t.projectId}}</td>
+            <td>{{t.title}}</td>
+            <td>{{t.type}}</td>
+            <td>{{t.status}}</td>
+            <td>{{t.subStatus}}</td>
+            <td>{{t.externalId}}</td>
+            <td>{{t.dueDate}}</td>
+            <td>{{t.priorityId}}</td>
+            <td>{{t.assigneeId}}</td>
+            <td>{{t.assigneeName}}</td>
+            <td>{{t.approvalState}}</td>
+        </tr>
+            {% endfor %}   
+        </tbody>
+    </table>
+
+
+</div>
+</div>
+ 
+{% endblock %}

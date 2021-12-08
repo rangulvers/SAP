@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="container">
+ <div class="row">
+     <h1 class="display-1">Hello World. CF Python Test App</h1>
+ </div>
+<div class="row">
+    <div class="col-xs-2">
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">CF App Details</h4>
+                <p class="card-text">App Port {{app_port}}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-xs-2">
+             <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Github Repo</h4>
+                <p class="card-text"><a href="https://github.com/rangulvers/sap" class="badge badge-primary">https://github.com/rangulvers/sap</a></p>
+                <p class="card-text"><a href="https://github.com/rangulvers/SAP/actions/workflows/deploy_to_cf.yml"><img src="https://github.com/rangulvers/SAP/actions/workflows/deploy_to_cf.yml/badge.svg" alt="Deploy Python to Cloud Foundry"></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ 
+{% endblock %}
+
