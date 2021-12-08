@@ -1,0 +1,24 @@
+name: Deploy Python to Cloud Foundry
+on:
+  push:
+    paths:
+    - 'BTP/cf_env_test/**'
+    
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout from Repository 
+        uses: actions/checkout@v2
+      - name : CF PUSH Application
+        uses: rangulvers/cf-push@main
+        with:
+          appdir:   './BTP/cf_env_test/testapp'
+          api:      ${{ secrets.CF_API }}
+          org:      ${{ secrets.CF_ORG }}
+          space:    ${{ secrets.CF_SPACE }}
+          username: ${{ secrets.CF_USERNAME }}
+          password: ${{ secrets.CF_PASSWORD }}
+          # debug : true                    # optional to see all dirs in deploy process
+          manifest: manifest.yml
+          validate: true
