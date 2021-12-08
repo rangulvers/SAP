@@ -1,6 +1,6 @@
 ---
 applications:
-- name: cf-python
+- name: cf-python-calm-api
   memory: 512M
   instances: 1
   random-route: true

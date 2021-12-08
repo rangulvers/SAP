@@ -3,13 +3,11 @@ import os
 import modules.calm as calm
 import modules.oauth as oauth
 import json
-import cfenv
+
 
 app = flask.Flask(__name__)
 
 cf_port = os.getenv("PORT")
-
-env = cfenv.AppEnv()
 
 
 @app.route('/')
@@ -24,7 +22,9 @@ def home():
 
 @app.route('/projects')
 def getProjects():
-
+    auth_server_url = os.getenv('api_token_url')
+    client_id = os.getenv('api_client_id')
+    client_secret = os.getenv('api_secret')
     token = oauth.get_new_token(auth_server_url, client_id, client_secret)
     calmprojects = calm.get_projects(token)
     """Get all Projects"""
@@ -37,7 +37,9 @@ def getProjects():
 
 @app.route('/tasks')
 def getTasks():
-
+    auth_server_url = os.getenv('api_token_url')
+    client_id = os.getenv('api_client_id')
+    client_secret = os.getenv('api_secret')
     token = oauth.get_new_token(auth_server_url, client_id, client_secret)
     projectid = flask.request.args.get('project')
     calm_tasks = calm.get_tasks(
