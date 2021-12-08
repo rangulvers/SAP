@@ -1,4 +1,4 @@
-name: Deploy Python to Cloud Foundry
+name: Deploy Cloud ALM example API APP to CF
 on:
   push:
     paths:

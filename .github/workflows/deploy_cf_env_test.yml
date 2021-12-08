@@ -1,4 +1,4 @@
-name: Deploy Python to Cloud Foundry
+name: Deploy CF Test ENV app
 on:
   push:
     paths:

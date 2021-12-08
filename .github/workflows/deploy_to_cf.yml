@@ -1,4 +1,4 @@
-name: Deploy Python to Cloud Foundry
+name: Deploy Python App to Cloud Foundry
 on:
   push:
     paths:
