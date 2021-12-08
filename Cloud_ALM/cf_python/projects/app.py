@@ -35,10 +35,6 @@ def getProjects():
 
 @app.route('/tasks')
 def getTasks():
-    auth_server_url = os.getenv('api_token_url')
-    client_id = os.getenv('api_client_id')
-    client_secret = os.getenv('api_secret')
-    token = oauth.get_new_token(auth_server_url, client_id, client_secret)
     projectid = flask.request.args.get('project')
     calm_tasks = calm.get_tasks(
         token, projectid)
