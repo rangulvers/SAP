@@ -17,7 +17,7 @@ def get_projects(token):
 
 
 def get_tasks(token, projectid):
-    get_tasks_api = os.getenv('api_url_tasks').join(f"?projectId={projectid}")
+    get_tasks_api = f"{os.getenv('api_url_tasks')}?projectId={projectid}"
     print(get_tasks_api)
     api_call_headers = {'Authorization': 'Bearer ' + token}
     api_call_response = requests.get(

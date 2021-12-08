@@ -19,7 +19,7 @@
                 <tbody>
         {% for pro in projects %}
         <tr>
-            <td scope="row"><a href="http://localhost:5000/tasks?project={{pro.id}}" class="badge badge-primary"> {{pro.id}}</a></td>
+            <td scope="row"><a href="/tasks?project={{pro.id}}" class="badge badge-primary"> {{pro.id}}</a></td>
             <td>{{pro.name}}</td>
             <td>{{pro.status}}</td>
         </tr>
