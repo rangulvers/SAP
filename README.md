@@ -4,9 +4,8 @@ This repository is a collection of SAP coding examples and a work in progress. F
 
 ## Table of Content
 
-- [SAP](#sap)
+- [SAP Coding Examples](#sap-coding-examples)
   - [Table of Content](#table-of-content)
-  - [Setup CF and upload appplication](#setup-cf-and-upload-appplication)
   - [SAP BTP Examples](#sap-btp-examples)
   - [SAP Cloud ALM](#sap-cloud-alm)
 
@@ -19,3 +18,5 @@ This repository is a collection of SAP coding examples and a work in progress. F
 This is a collection of example applications and how you can use Github actions to push them directly to SAP BTP
 
 ## [SAP Cloud ALM](Cloud%20ALM)
+
+[![Deploy Cloud ALM example API APP to CF](https://github.com/rangulvers/SAP/actions/workflows/deploy_cf_calm_api.yml/badge.svg)](https://github.com/rangulvers/SAP/actions/workflows/deploy_cf_calm_api.yml)
