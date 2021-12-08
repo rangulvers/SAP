@@ -8,6 +8,7 @@ import json
 app = flask.Flask(__name__)
 app.secret_key = os.urandom(24)
 cf_port = os.getenv("PORT")
+token = oauth.get_new_token()
 
 
 @app.route('/')
@@ -48,4 +49,3 @@ if __name__ == '__main__':
         app.run(host='0.0.0.0', port=5000, debug=False)
     else:
         app.run(host='0.0.0.0', port=int(cf_port), debug=False)
-        token = oauth.get_new_token()
